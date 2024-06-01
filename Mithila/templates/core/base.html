@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %} Base Page {% endblock title %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/style.css">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                color: #FFFFFF;
+            }
+            #navbar{
+                height: 60px;
+                background-color: #6D1B46;
+            }
+            #logo{
+                font-size: 25px;
+                margin-right: 550px;
+                margin-left: 50px;
+                {% comment %} margin: 20px 550px 20px 50px; {% endcomment %}
+                color: #21A533;
+            }
+            a{
+                margin-right: 100px;
+                text-decoration: none;
+            }
+            button{
+                background-color: #2E73A0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href='#' id="logo">Mithila Dham</a>
+            <a href='#'>Home</a>
+            <a href='#'>About</a>
+            <a href='#'>Contact Us</a>
+            {% comment %} <textarea name="search" placeholder="search.mithila"></textarea> {% endcomment %}
+            <input placeholder="search mithila">
+            <button>Search</button>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
